@@ -3,9 +3,62 @@
 <head>
 <title>Home</title>
     <link rel="stylesheet" href="stylehome.css">
+   <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
    <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="C:\Users\Asus\Desktop\santa\html\nitin/script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
     <style>
-       
+    .container{
+    text-align: center;
+}
+.icon{
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    padding:0;
+    position: absolute;
+    left: 65px;
+    bottom:33%;
+}
+.weather{
+    font-size: 35px;
+    font-style: italic;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    left: 170px;
+    bottom: 0.5%;
+}
+.temp{
+    font-size: 60px;
+    font-family: monospace;
+    position: absolute;
+    left: 136px;
+    bottom:5%;
+}
+.time{
+   position: absolute;
+   left: 40px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    top: 0;
+}
+.date{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+   position: absolute;
+   left: 245px;
+    font-size: 20px;
+    top: 0;
+
+}
+.desc{
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    left: 125px;
+    top: 13%;
+}
         #main
         {
             margin-left:200px;
@@ -33,7 +86,6 @@ height:150px;
             float:left;
             border:1px solid black;
             border-radius:100%;
-            
         }
         #sp1
         {
@@ -46,20 +98,19 @@ height:150px;
      
         </style>
 	</head>
-	<body style="background-color: #316C91;">
+	<body style="background-color: black;">
+
 
 <div class="image">
-
-  <img src="C:\Users\Asus\Desktop\santa\html\nitin\Picture1.png" height="750px" width="1500px">
-  
-  <div class="text-block">
-<h1 style="font-size: 50px;">Hostel Management System</h1>
+<img src="C:\Users\Asus\Desktop\santa\html\nitin\Picture1.png" style=" height: 750px; width: 1500px;" >
+<div class="text-block">
+<h1 style="font-size: 60px; font-family: Brush Script MT; ">Hostel Management System</h1>
 </div>
 <div class="dropdown" style="left:110px;">
   		<button class="dropbtn">Apply</button>
   		<div class="dropdown-content">
     		<a href="C:\Users\Asus\Desktop\santa\html\nitin/newadmission.html">New Admission</a>
-    		<a href="C:\Users\Asus\Desktop\santa\html\nitin\index.html">Existing</a>
+    		<a href="C:\Users\Asus\Desktop\santa\html\nitin\form.html" target="_blank" >Existing</a>
   		</div>
 </div>    
 <div class="dropdown" style="left:370px;">
@@ -74,8 +125,8 @@ height:150px;
 <div class="dropdown" style="left: 630px;">
 <button class="dropbtn">Contact</button>
   		<div class="dropdown-content">
-    		<a href="C:\Users\Asus\Desktop\santa\html\nitin\About.html">About Us</a>
-    		<a href="C:\Users\Asus\Desktop\santa\html\nitin\Contact.html">Contact Us</a>
+    		<a href="C:\Users\Asus\Desktop\santa\html\nitin\aboutus.html">About Us</a>
+    		<a href="C:\Users\Asus\Desktop\santa\html\nitin\contactUs.html" target="_blank" >Contact Us</a>
  
   		</div>
 </div>
@@ -87,35 +138,126 @@ height:150px;
 <div class="dropdown" style="left: 1150px;">
   		<button class="dropbtn">Gallery</button>
   		<div class="dropdown-content">
-                                <a href="C:\Users\Asus\Desktop\santa\html\nitin\gallery.html">Gallery</a>
+                                <a href="C:\Users\Asus\Desktop\santa\html\nitin\gallery.html" target="_blank" >Gallery</a>
   		</div>
 </div>
+  
 
-<div class="loginbox">
-<img src="C:\Users\Asus\Desktop\santa\html\nitin\HTML\IMAGE\icon.png" class="logo">
-<h1>Login Here</h1>
-<form>
-<p>User name</p>
-<input type="text" name="" placeholder="Enter Username">
-<p>Password</p>
-<input type="Password" name="" placeholder="Enter Password">
-<a href="city.html" class="vishal"><input class="vishal" input type="button" name="" value="Login"></a>
-<p><a href="#">Lost your password?</a></p>
-<p><a href="#">Don't have an account?</a></p>
-
-
-</form>
+<div class="text">
+<p style="font-size: 35px; font-family: Lucida Handwriting;text-align: center;">Your one stop </p>
+<p style="font-size: 35px; font-family: Lucida Handwriting;text-align: center;">destination  for </p>
+  <span
+     class="txt-rotate"
+     style=" font-family: Fantasy; padding-left: 60px;"
+     data-period="800"
+     data-rotate='[ "Hostel Booking.", "Account Info.", "Contact Details." ]'>
+</span>
+</div>
+<div class="next">
+<img src="C:\Users\Asus\Desktop\santa\html\nitin\weat.jpg" style="width: 350px; height: 220px; border-radius: 10px;">
+<div class="container">
+  <p class="time"></p>
+  <img class="icon">
+  <p class="desc"></p>
+  <p class="weather"></p>
+  <p class="temp"></p>
+  <p class="date"></p>
+</div>
 </div>
 
-  </div>
+<div class="slideshow-container">
+<center><h2 style="font-family: Monaco; font-size: 33px; color: white;">Our Salient Features</h2></center>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 2</div>
+  <div class="fext"> We provide you with seamlessly-easy and secured interface. </div>
+  <img src="C:\Users\Asus\Desktop\santa\html\nitin\front.jpg" style="width:100%; ">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 2</div>
+  <div class="fext"style="padding-right: 20px;"> Explore our amazing hostel facilities and gallery in
+   just one click. Click on the above image and find out what's amazing.</div>
+ <a href="C:\Users\Asus\Desktop\santa\html\nitin\gallery.html" target="_blank">
+  <img src="C:\Users\Asus\Desktop\santa\html\nitin\home.jpg" style="width: 100%;">
+ </a>
+</div>
+
+<div style="text-align:center;">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
 </div>
 	<div class="navbar">
-  		<a href="C:\Users\Asus\Desktop\santa\html\nitin/Contact.html">Contact</a>
-                                <a href="C:\Users\Asus\Desktop\santa\html\nitin\About.html">About Us</a>
-                                <p style="color:white; text-align: right; padding-right: 10px ;"> Copyright-2020. Nitin Sanatan </p>
-  		
+  		<a href="C:\Users\Asus\Desktop\santa\html\nitin/ContactUs.html" target="_blank">Contact</a>
+                                <a href="C:\Users\Asus\Desktop\santa\html\nitin\aboutus.html">About Us</a>
+                          <p style="color:white; float: right ;padding-right: 620px; font-size: 20px;"> Copyright-2020. Nitin Sanatan </p>
+                        <a href="https://www.linkedin.com/in/nitinsanatan/" class="fa fa-linkedin" target="_blank"></a>
+                       <a href="https://twitter.com/SanatanShukla58" class="fa fa-twitter" target="_blank"></a>
+                       <a href="https://www.instagram.com/nitin__s_/" class="fa fa-instagram" target="_blank" ></a>
+                                
+</br>
 	</div>
-    <div>
-    <center>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3500); // Change image every 2 seconds
+}
+    var lat;
+      var long;
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(successFunction);
+      }
+      //Get latitude and longitude;
+      function successFunction(position) {
+        lat = position.coords.latitude;
+        long = position.coords.longitude;
+
+        $.getJSON(
+          "http://api.openweathermap.org/data/2.5/weather?lat=" +
+          window.lat +
+          "&lon=" +
+          window.long +
+          "&appid=4de72f8910c79cd61ebddfeaf621798a&units=metric",
+          function (data) {
+            console.log(data);
+            var icon =
+              "https://openweathermap.org/img/wn/" + data.weather[0].icon + ".png";
+            var temp = Math.floor(data.main.temp);
+            var weather = data.weather[0].main;
+            var desc = data.name;
+            d = new Date();
+            localTime = d.getTime();
+            localOffset = d.getTimezoneOffset() * 60000;
+            utc = localTime + localOffset;
+            var atlanta = utc + 1000 * 19600;
+            var nd = (new Date(atlanta) + "");
+            console.log(nd);
+            var date = nd.slice(4, 15);
+            var time = nd.slice(16, 21);
+            $(".time").append('&#x231A;'+time);
+            $(".date").append('&#128197;'+date);
+            $(".icon").attr("src", icon);
+            $(".weather").append(weather);
+            $(".temp").append(temp+'&deg;'+'C');
+            $(".desc").append(desc+" "+data.sys.country);
+          }
+        );
+      }
+</script>
 </body>
 </html>
